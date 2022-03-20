@@ -1,16 +1,22 @@
 import React from "react";
+import logo from '../../assets/PERFIL_E4INKA.png';
 import './header.css';
 
 
-export default function Header(){
+const Header = () => {
     return(
       <>
         <header>
-            <h1 className="header">e4inka</h1>
+            <div className="header__container-logo">
+                <img src={logo} className="header__img-logo"/>
+                <span className='header__title'>e4inka</span>
+            </div>
+            <div className="header__container-navbar">
+                <nav></nav>
+            </div>
         </header>
-            
-        
-       
       </>
     )
-  }
+}
+
+export default Header

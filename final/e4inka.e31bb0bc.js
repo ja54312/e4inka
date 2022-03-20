@@ -29566,7 +29566,9 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"src/assets/PERFIL_E4INKA.png":[function(require,module,exports) {
+module.exports = "/PERFIL_E4INKA.d626a5fd.png";
+},{}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -29644,42 +29646,154 @@ module.hot.accept(reloadCSS);
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = Header;
+exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
+
+var _PERFIL_E4INKA = _interopRequireDefault(require("../../assets/PERFIL_E4INKA.png"));
 
 require("./header.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Header() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h1", {
-    className: "header"
-  }, "e4inka")));
-}
-},{"react":"node_modules/react/index.js","./header.css":"src/React/header/header.css"}],"src/React/body/body.css":[function(require,module,exports) {
+var Header = function Header() {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("div", {
+    className: "header__container-logo"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _PERFIL_E4INKA.default,
+    className: "header__img-logo"
+  }), /*#__PURE__*/_react.default.createElement("span", {
+    className: "header__title"
+  }, "e4inka")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "header__container-navbar"
+  }, /*#__PURE__*/_react.default.createElement("nav", null))));
+};
+
+var _default = Header;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","../../assets/PERFIL_E4INKA.png":"src/assets/PERFIL_E4INKA.png","./header.css":"src/React/header/header.css"}],"src/React/body/body.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/React/body/body.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/React/body/components/contacto.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = Body;
+exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
+
+require("../body.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Contacto = function Contacto() {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
+    className: "contacto__container",
+    id: "contacto"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "contacto_container-container"
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    className: "contacto__title"
+  }, "Contactame"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "contacto__container-redes"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    class: "contacto__redes"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: "https://www.facebook.com/erick.alatorre.90",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: "https://www.vectorlogo.zone/logos/facebook/facebook-tile.svg",
+    alt: "logo de facebook",
+    class: "contacto__image"
+  }))), /*#__PURE__*/_react.default.createElement("div", {
+    class: "contacto__redes"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: "https://www.instagram.com/e4inka/",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: "https://www.vectorlogo.zone/logos/instagram/instagram-icon.svg",
+    alt: "logo de instagram",
+    class: "contacto__image"
+  })))), /*#__PURE__*/_react.default.createElement("span", {
+    className: "contacto__message"
+  }, "Trabajemos juntos"))));
+};
+
+var _default = Contacto;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","../body.css":"src/React/body/body.css"}],"src/React/body/components/description.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+require("../body.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Description = function Description() {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h2", null, "Description"));
+};
+
+var _default = Description;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","../body.css":"src/React/body/body.css"}],"src/React/body/components/trabajos.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+require("../body.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Trabajos = function Trabajos() {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h2", null, "Trabajos"));
+};
+
+var _default = Trabajos;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","../body.css":"src/React/body/body.css"}],"src/React/body/body.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _contacto = _interopRequireDefault(require("./components/contacto"));
+
+var _description = _interopRequireDefault(require("./components/description"));
+
+var _trabajos = _interopRequireDefault(require("./components/trabajos"));
 
 require("./body.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Body() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("body", null, /*#__PURE__*/_react.default.createElement("h2", null, "body")));
-}
-},{"react":"node_modules/react/index.js","./body.css":"src/React/body/body.css"}],"src/React/footer/footer.css":[function(require,module,exports) {
+var Body = function Body() {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("body", null, /*#__PURE__*/_react.default.createElement(_description.default, null), /*#__PURE__*/_react.default.createElement(_trabajos.default, null), /*#__PURE__*/_react.default.createElement(_contacto.default, null)));
+};
+
+var _default = Body;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","./components/contacto":"src/React/body/components/contacto.js","./components/description":"src/React/body/components/description.js","./components/trabajos":"src/React/body/components/trabajos.js","./body.css":"src/React/body/body.css"}],"src/React/footer/footer.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -29690,7 +29804,7 @@ module.hot.accept(reloadCSS);
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = Footer;
+exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -29698,10 +29812,29 @@ require("./footer.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Footer() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("footer", null, /*#__PURE__*/_react.default.createElement("h2", null, "footer")));
-}
-},{"react":"node_modules/react/index.js","./footer.css":"src/React/footer/footer.css"}],"index.js":[function(require,module,exports) {
+var Footer = function Footer() {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("footer", null, /*#__PURE__*/_react.default.createElement("span", {
+    className: "footer__version"
+  }, " v0.0.0"), /*#__PURE__*/_react.default.createElement("p", {
+    class: "footer__text"
+  }, "Created with love \u2764 by ", /*#__PURE__*/_react.default.createElement("a", {
+    href: "https://ja54312.com",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    alt: "enlace a pagina JA54312"
+  }, "JA54312")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-nivel"
+  })));
+};
+
+var _default = Footer;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","./footer.css":"src/React/footer/footer.css"}],"src/styles/base.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29719,6 +29852,8 @@ var _body = _interopRequireDefault(require("./src/React/body/body"));
 
 var _footer = _interopRequireDefault(require("./src/React/footer/footer"));
 
+require("./src/styles/base.css");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
@@ -29728,7 +29863,7 @@ function App() {
 var entryPointMalta = document.getElementById("root");
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(App, null), entryPointMalta);
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./src/React/header/header":"src/React/header/header.js","./src/React/body/body":"src/React/body/body.js","./src/React/footer/footer":"src/React/footer/footer.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./src/React/header/header":"src/React/header/header.js","./src/React/body/body":"src/React/body/body.js","./src/React/footer/footer":"src/React/footer/footer.js","./src/styles/base.css":"src/styles/base.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -29756,7 +29891,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33495" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35795" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

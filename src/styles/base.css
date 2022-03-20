@@ -1,12 +1,14 @@
-/*-----FUente-----*/
+/*-----Fuente-----*/
 
 /*-----VARIABLES-----*/
 :root {
     --blanco:#FFFFFF;
     --azul:#0E90F2;
     --rojo:red;
+    --main-color:#2B2F32;
+    --verde:#BFD9B6;
     --colortabla:orange;
-    --fuente: Nunito ;
+    --fuente-principal: Nunito ;
 }
 
 /*-----BASE-----*/
